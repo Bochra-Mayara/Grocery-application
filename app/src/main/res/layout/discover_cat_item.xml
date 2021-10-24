@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imvcircular"
+            android:layout_width="170dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/offer"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:shapeAppearanceOverlay="@style/ciecular"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="5dp"
+            />
+        <TextView
+            android:id="@+id/dis_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alike"
+            android:text="Discover Produits"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

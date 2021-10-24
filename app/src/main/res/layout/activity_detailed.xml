@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailedActivity">
+
+    <ImageView
+        android:id="@+id/detailed_img"
+        android:layout_width="match_parent"
+        android:src="@drawable/apple"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/detailed_img"
+        app:title="Detailed Products" />
+
+    <TextView
+        android:id="@+id/detailed_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alike"
+        android:text="Price :30/kg"
+        android:textColor="@color/purple_500"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_img"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/image_view2"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/lug"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_img"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/detailed_rating"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alike"
+        android:text="5.0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/image_view2"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_img"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alike"
+        android:text="Description"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_price" />
+
+    <TextView
+        android:id="@+id/detailed_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a large shop which sells most types of food and other goods needed in the home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_margin="15dp"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#DBFFD1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/add_item"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pul" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="308dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alike"
+            android:text="1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/add_remove"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/moi" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_cart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Add To Cart"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        android:background="@drawable/bg_detailed"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
